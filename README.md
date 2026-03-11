@@ -23,6 +23,8 @@ Two segments:
 
 **Isolated attack segment (10.0.99.x)** - No internet route. Intentionally vulnerable targets live here. pfSense enforces a deny rule on this segment. Nothing in this range touches the internet.
 
+The Proxmox host itself sits on the home LAN at 192.168.100.10. The home network runs on 192.168.100.x.
+
 ## Tools (planned)
 
 * Proxmox VE - hypervisor
@@ -40,7 +42,7 @@ Two segments:
 
 |#|Project|Status|
 |-|-|-|
-|01|Infrastructure - Proxmox install and network setup|In Progress|
+|01|Infrastructure - Proxmox install and network setup|Proxmox installed|
 |02|SIEM - Wazuh deployment and endpoint agents|Planned|
 |03|Vulnerability Management - OpenVAS, Nessus, VA report|Planned|
 |04|Active Directory - domain setup and attack detection|Planned|
