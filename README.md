@@ -56,7 +56,6 @@ The Proxmox host itself sits on the home LAN at 192.168.100.10. The home network
 * CompTIA A+ - done
 * CompTIA Network+ - done
 * CompTIA Security+ - done
-* CompTIA CySA+ - studying
 * Microsoft AZ-500 - planned
 
 ## Links
