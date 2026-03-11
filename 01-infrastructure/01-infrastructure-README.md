@@ -1,6 +1,6 @@
 # 01 - Infrastructure
 
-**Status: In Progress**
+**Status: In Progress - Proxmox installed**
 
 ## What this is
 
@@ -32,13 +32,13 @@ Bare metal Kali on the HP Envy. Keeping it as a dedicated physical machine for a
 ```
 ISP (1Gbps fiber)
        |
-  ISP router (192.168.1.1)
+  ISP router (192.168.100.1)
        |
-  Home LAN (192.168.1.x)
+  Home LAN (192.168.100.x)
        |
-  HP AIO - Proxmox host (192.168.1.10) -- wired ethernet
-  Dell D630 - sensor node               -- wired ethernet
-  Lenovo Yoga - daily driver            -- wifi or wired
+  HP AIO - Proxmox host (192.168.100.10) -- wired ethernet
+  Dell D630 - sensor node                -- wired ethernet
+  Lenovo Yoga - daily driver             -- wifi or wired
 ```
 
 ### Virtual - Proxmox bridges
@@ -65,9 +65,9 @@ The isolation on vmbr1 is intentional and important. Running attack tools agains
 
 ## ISOs
 
-- [ ] Proxmox VE - https://www.proxmox.com/en/downloads
+- [x] Proxmox VE - https://www.proxmox.com/en/downloads
 - [ ] Kali Linux installer - https://www.kali.org/get-kali/
 
 ## Next step
 
-Flash Proxmox ISO to USB, install on HP AIO, configure the two virtual bridges. Will document the install process as it happens.
+Configure vmbr1 (isolated attack segment) in Proxmox, then start spinning up VMs.
