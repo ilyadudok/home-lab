@@ -66,7 +66,7 @@ The isolation on vmbr1 is intentional and important. Running attack tools agains
 ## ISOs
 
 - [x] Proxmox VE - https://www.proxmox.com/en/downloads
-- [ ] Kali Linux installer - https://www.kali.org/get-kali/
+- [x] Kali Linux installer - https://www.kali.org/get-kali/
 
 ## Next step
 
