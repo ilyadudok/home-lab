@@ -60,5 +60,5 @@ The Proxmox host itself sits on the home LAN at 192.168.100.10. The home network
 
 ## Links
 
-[LinkedIn](https://www.linkedin.com/in/eli-dudok-csis-40261119a/) · [GitHub](https://github.com/ilyadudok)
+[LinkedIn](https://www.linkedin.com/in/eli-dudok-csis-40261119a/) · [GitHub](https://github.com/elidudok)
 
