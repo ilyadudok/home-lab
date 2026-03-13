@@ -1,6 +1,6 @@
 # 01 - Infrastructure
 
-**Status: In Progress - Proxmox installed**
+**Status: In Progress - Proxmox installed, vmbr1 is installed, and ISOs are loaded**
 
 ## What this is
 
@@ -8,14 +8,14 @@ This covers the physical and virtual foundation of the lab. Before anything else
 
 ## Hypervisor - Proxmox VE
 
-Going with Proxmox on the HP Pavilion AIO. A few reasons:
+Proxmox is installed on the HP Pavilion AIO. A few reasons:
 
 - Bare metal install so all the hardware goes to the lab, no host OS overhead
 - Web GUI means I can manage everything from my laptop without touching the machine
 - More realistic than running VMs inside Windows - this is closer to how it works in a real environment
 - Free, no license headaches
 
-The HP AIO is getting wiped. Windows 10 Home is gone.
+The HP AIO has been wiped. Windows 10 Home is gone.
 
 ## Attacker machine - Kali Linux
 
@@ -45,10 +45,12 @@ ISP (1Gbps fiber)
 
 **vmbr0 - lab network (10.0.10.x)**
 - NAT to internet for updates
+- configured and active in Proxmox as of March 2026
 - VMs: pfSense, Wazuh, Windows Server 2022, Windows 10, Ubuntu Desktop, OpenVAS
 
 **vmbr1 - isolated attack segment (10.0.99.x)**
-- No internet route - pfSense deny rule enforces this
+- No internet route - pfSense deny rule will enforce this
+- configured and active in Proxmox as of March 2026
 - VMs: Metasploitable 2, DVWA, VulnHub targets
 - Kali connects here for attack exercises only
 
@@ -67,7 +69,10 @@ The isolation on vmbr1 is intentional and important. Running attack tools agains
 
 - [x] Proxmox VE - https://www.proxmox.com/en/downloads
 - [x] Kali Linux installer - https://www.kali.org/get-kali/
+- [x] Windows 10 Pro - https://www.microsoft.com/en-us/software-download/windows10
+- [x] Windows Server 2022 - https://www.microsoft.com/en-us/evalcenter/evaluate-windows-server-2022
+- [x] Ubuntu Server 24.04.4 - https://releases.ubuntu.com/24.04/
 
 ## Next step
 
-Configure vmbr1 (isolated attack segment) in Proxmox, then start spinning up VMs.
+Building the Ubuntu Server VM and spinning up the other VMs.
