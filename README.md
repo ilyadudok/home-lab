@@ -42,7 +42,7 @@ The Proxmox host itself sits on the home LAN at 192.168.100.10. The home network
 
 |#|Project|Status|
 |-|-|-|
-|01|Infrastructure - Proxmox install and network setup|Proxmox installed|
+|01|Infrastructure - Proxmox install and network setup|In Progress - bridges configured, ISOs loaded, building VMs next|
 |02|SIEM - Wazuh deployment and endpoint agents|Planned|
 |03|Vulnerability Management - OpenVAS, Nessus, VA report|Planned|
 |04|Active Directory - domain setup and attack detection|Planned|
